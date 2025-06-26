@@ -121,6 +121,7 @@
       "tag":"Proxy",
       "type":"selector",
       "outbounds":[
+        "auto-balance",
         "auto",
         "direct",
         "{all}"
@@ -521,6 +522,14 @@
       {
         "rule_set": ["geoip-cn", "geosite-cn"],
         "outbound": "China"
+      },
+      {
+        "outbound":"auto-balance",
+        "type": "loadbalance",
+        "outbounds": ["direct","HongKong","TaiWan","Singapore","Japan",
+          "America","Others"],
+        "strategy": "url-test",
+        "url": "http://www.gstatic.com/generate_204"
       }
     ],
     "rule_set": [
