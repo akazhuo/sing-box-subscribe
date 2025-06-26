@@ -526,7 +526,7 @@
       {
         "outbound":"auto-balance",
         "type": "loadbalance",
-        "outbounds": ["direct","HongKong","TaiWan","Singapore","Japan",
+        "outbounds": ["China","HongKong","TaiWan","Singapore","Japan",
           "America","Others"],
         "strategy": "url-test",
         "url": "http://www.gstatic.com/generate_204"
