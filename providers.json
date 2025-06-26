@@ -1,7 +1,7 @@
 {
     "subscribes":[
         {
-            "url": "URL",
+            "url": "https://test-zone-3axlnqnxuxze-1356608074.eo-edgefunctions.com/api/v1/client/subscribe?token=2c3129fac60ed68a7354f092e72e729c",
             "tag": "tag_1",
             "enabled": true,
             "emoji": 1,
